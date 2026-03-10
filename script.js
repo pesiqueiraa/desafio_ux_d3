@@ -8,14 +8,13 @@ const velocidadeMaxima = 0.025;
 const aceleracao = 0.0006;
 
 
-// --- NOVO: Título de instrução ---
 const instrucao = d3.select("body").append("h1")
     .text("Segure o clique para acelerar")
     .style("position", "absolute")
     .style("top", "35%")
     .style("width", "100%")
     .style("color", "black")
-    .style("pointer-events", "none"); // Garante que o texto não bloqueie o clique 
+    .style("pointer-events", "none"); 
     
 const svg = d3.select("body").append("svg")
   .attr("width", largura)
